@@ -6,29 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Vijay Kulkarni's Portfolio</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!--link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" -->
     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--script type="text/javascript" src="js/bootstrap.min.js"></script -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div id="container">
+    <div id="container" class="center-block">
         <div class="row">
             <div id="udemylogog" class="col-md-6 logo_super ">
-                <img class="img-responsive" src="images/udemyLogo.png?raw=true " alt="Udemy logo " />
+                <img class="img-responsive" src="images/images_src/fixed/udemyLogo.png?raw=true" alt="Udemy logo " />
             </div>
             <div id="name " class="col-md-6 ">
                 <h3 class="text-right text-uppercase text-thin title_super ">Vijay Kulkarni</h3>
-                <h4 class="text-right text-uppercase ">Front-end Ninja (Asipirant)</h4>
+                <h4 class="text-right text-uppercase ">Front-end Developer (Aspirant)</h4>
             </div>
         </div>
         <hr>
         <div id="mainDiv" class="row ">
             <div class="col-md-12 ">
-                <img id="mainImage " class="img-responsive fixImage" src="images/mainImage.jpg " alt="main image placeholder " />
+                <!--img id="mainImage " class="img-responsive fixImage" src="images/mainImage-1024_large_2x.jpg" alt="main image placeholder " /-->
+                <img class="img-responsive fixImage" 
+                  src="images/large/mainImage.jpg"
+                  srcset="images/large/mainImage.jpg 1280w,
+                          images/medium/mainImage.jpg 640w,
+                          images/small/mainImage.jpg 320w"
+                     sizes="(min-width: 500px) 50%, 100%"  
+                     alt="main image placeholder">
             </div>
         </div>
         <div class="row ">
@@ -37,28 +54,47 @@
             </div>
         </div>
         <div class="row text-center ">
-            <div id="footerDivLeft " class="col-md-4 " data-toggle="modal" data-target="#myModal">
-                <img class="img-responsive fixImage" data-toggle="modal " data-target="#myModal " src="images/iceMountains.jpg " alt=" SCJP Image" />
+            <div id="footerDivLeft" class="col-md-4">
+                <!--img class="img-responsive fixImage" data-toggle="modal" data-target="#myModal" src="images/iceMountains-500_large_2x.jpg " alt=" SCJP Image" /-->
+                 <img class="img-responsive fixImage" data-toggle="modal" data-target="#myModal" 
+                  src="images/large/iceMountains.jpg"
+                  srcset="images/large/iceMountains.jpg 1280w,
+                          images/small/iceMountains.jpg 640w,
+                          images/small/iceMountains.jpg 320w"
+                     sizes="(min-width: 500px) 50%, 100%"  
+                     alt="iceMountains placeholder">
                 <h3 class="text-uppercase ">Sun Certified Java  Programmer (SCJP)</h3>
-                <a href="images/iceMountains.jpg ">some url...</a>
+                <a href="http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=653&get_params=p_id:153">SCJP</a>
             </div>
-            <div id="footerDivCenter" class="col-md-4 " data-toggle="modal" data-target="#myModal">
-                <img class="img-responsive fixImage" data-toggle="modal " data-target="#myModal " src="images/iceMountains.jpg " alt="SCEA Image" />
+            <div id="footerDivCenter" class="col-md-4" >
+                <img class="img-responsive fixImage" data-toggle="modal" data-target="#myModal" 
+                  src="images/large/iceMountains.jpg"
+                  srcset="images/large/iceMountains.jpg 1280w,
+                          images/small/iceMountains.jpg 640w,
+                          images/small/iceMountains.jpg 320w"
+                     sizes="(min-width: 500px) 50%, 100%"  
+                     alt="iceMountains placeholder">
                 <h3 class="text-uppercase ">Sun Certified Enterprise Architect (SCEA)</h3>
-                <a href="images/iceMountains.jpg ">some url...</a>
+                <a href="http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=653&get_params=p_id:153">SCEA</a>
             </div>
-            <div id="footerDivRight" class="col-md-4 " data-toggle="modal" data-target="#myModal">
-                <img class="img-responsive fixImage" data-toggle="modal " data-target="#myModal " src="images/iceMountains.jpg " alt=" Udacity Front-End Nano Degree Image" />
+            <div id="footerDivRight" class="col-md-4 ">
+                 <img class="img-responsive fixImage" data-toggle="modal" data-target="#myModal" 
+                  src="images/large/iceMountains.jpg"
+                  srcset="images/large/iceMountains.jpg 1280w,
+                          images/small/iceMountains.jpg 640w,
+                          images/small/iceMountains.jpg 320w"
+                     sizes="(min-width: 500px) 50%, 100%"  
+                     alt="iceMountains placeholder">
                 <h3 class="text-uppercase ">Udacity Front-End Nano Degree (In progress)</h3>
-                <a href="images/iceMountains.jpg ">some url...</a>
+                <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001">Udacity Front-End Web Developer Nanodegree</a>
             </div>
         </div>
         <!-- skills matrix -->
         <div class="row ">
-            <div class="col-md-6 ">
+            <div class="col-md-6">
                 <h3 class="text-fade ">Skills Matrix</h3>
             </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6">
                 <h3 class="text-fade ">Other Qualities</h3>
             </div>
         </div>
@@ -91,10 +127,6 @@
             </div>
             <div class="col-md-6">
                 <div class="panel panel-default">
-                    <!-- Default panel contents -->
-                    <div class="panel-body">
-                        <p>Some achievements</p>
-                    </div>
                     <!-- List group -->
                     <ul class="list-group">
                         <li class="list-group-item">Quick Learner</li>
@@ -106,22 +138,24 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">SCJP</h4>
-                </div>
-                <div class="modal-body">
-                </div>
-                <div class="modal-footer">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <p>Description to be formatted</p>
+            </div>
+            <div class="modal-footer">
+                <div>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

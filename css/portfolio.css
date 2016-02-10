@@ -1,4 +1,5 @@
  /*catch all for below objects to avoid overflow*/
+ 
  img,
  embed,
  object,
@@ -21,13 +22,12 @@
      margin-left: auto;
      margin-right: auto;
  }
-
+ 
  .row {
      width: 100%;
  }
- 
- 
  /* text styles*/
+ 
  .text-thin {
      font-weight: 100;
  }
@@ -53,45 +53,44 @@
  .progress-custom {
      margin-bottom: 5px;
  }
+ 
  .text-left {
      text-align: left;
  }
+ 
  .custom-navbar {
      margin-bottom: 3px;
-
  }
-
+ 
  .attribute {
-     color:#51c5ee;   
+     color: #51c5ee;
  }
+ 
  .right {
      float: right;
  }
-
-
-
-/* Media Query */
-
-@media all and (min-width: 960px) {
-    .title-super {
-        font-size: 50px;
-    }
-}
-
-@media all and (max-width: 959px) and (min-width: 600px) {
-    .title-super {
-        font-size: 40px;
-    }
-}
-
-@media all and (max-width: 599px) and (min-width: 320px) {
-    .title-super {
-        font-size: 35px;
-    }
-}
-
-@media all and (max-width: 319px) and (min-width: 100px) {
-    .title-super {
-        font-size: 20px;
-    }
-}
+ /* Media Query */
+ 
+ @media all and (min-width: 960px) {
+     .title-super {
+         font-size: 50px;
+     }
+ }
+ 
+ @media all and (max-width: 959px) and (min-width: 600px) {
+     .title-super {
+         font-size: 40px;
+     }
+ }
+ 
+ @media all and (max-width: 599px) and (min-width: 320px) {
+     .title-super {
+         font-size: 35px;
+     }
+ }
+ 
+ @media all and (max-width: 319px) and (min-width: 100px) {
+     .title-super {
+         font-size: 20px;
+     }
+ }

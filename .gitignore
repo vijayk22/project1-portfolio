@@ -1,2 +1,4 @@
 images_src
 node_modules/*
+**/.DS*
+*.DS
